@@ -13,9 +13,8 @@ output = babel.transform(input, {
   // Remove this to avoid .babelrc reading.
   filename: inputFile,
   babelrc: false,
-  presets: ['stage-0'],
   plugins: ['transform-es2015-modules-commonjs', 'syntax-jsx'],
-  sourceMap: false,
+  sourceMap: false
 }).code;
 
 fs.writeFileSync(path.join(__dirname, "dist", "actual.js"), output, fsOpts);
