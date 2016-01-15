@@ -1,5 +1,12 @@
 <!-- Related issue: https://phabricator.babeljs.io/T6976 -->
 
+```sh
+$ git clone https://github.com/jayzawrotny/minirepro-babel-syntax-jsx-error.git
+$ cd minirepro-babel-syntax-jsx-error
+$ npm i
+$ npm run repro
+```
+
 # Expected result
 That babel is able to parse the JSX but only transforms the import statements into require statements.
 
