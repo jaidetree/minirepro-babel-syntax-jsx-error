@@ -1,3 +1,4 @@
 dist/*
 !dist/actual.js
+!dist/expected.js
 node_modules/
